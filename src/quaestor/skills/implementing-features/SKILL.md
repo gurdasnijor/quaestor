@@ -10,11 +10,17 @@ I help you execute production-quality implementations with auto-detected languag
 
 ## When to Use Me
 
-- User says "implement [feature]", "build [functionality]", "fix [bug]"
-- User mentions a specification ID (e.g., "implement spec-feature-001")
-- Starting implementation after planning phase
-- Need to coordinate multiple agents for complex changes
-- Want specification-driven development workflow
+**Auto-activate when:**
+- Invoked via `/quaestor:implement` slash command
+- User mentions "build [specific feature]" or "fix [specific bug]" with context
+- Continuing implementation after planning phase is complete
+- User says "continue implementation" or "resume implementing"
+- Coordinating multi-agent implementation of an active specification
+
+**Do NOT auto-activate when:**
+- User says only "implement" or "implement it" (slash command handles this)
+- User is still in planning/research phase
+- Request is vague without feature details
 
 ## Supporting Files
 

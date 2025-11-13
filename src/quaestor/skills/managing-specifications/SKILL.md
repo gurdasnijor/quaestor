@@ -10,16 +10,19 @@ I help you work with specifications: creating new specs from requirements, manag
 
 ## When to Use Me
 
-**Creating specifications:**
-- User describes a feature: "I want to add user authentication"
-- User wants to plan: "Create a spec for...", "Plan a feature"
-- User has requirements: "Write a specification for..."
-
-**Managing specifications:**
-- User asks about status: "What specs are active?", "Show spec progress"
-- User wants to activate: "Start working on spec-feature-001"
+**Auto-activate when:**
+- Invoked via `/quaestor:plan` slash command
+- User describes a feature with details: "I want to add user authentication with JWT tokens"
+- User explicitly requests spec creation: "Create a spec for X", "Write a specification for Y"
+- User asks about spec status: "What specs are active?", "Show spec progress"
+- User wants to activate work: "Start working on spec-feature-001"
 - User wants to complete: "Mark spec-feature-001 as done"
 - User checks progress: "How's the authentication feature going?"
+
+**Do NOT auto-activate when:**
+- User says only "plan" or "plan it" (slash command handles this)
+- User is making general requests without specification context
+- Request needs more clarification before creating a spec
 
 ## Quick Start
 
